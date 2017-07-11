@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Weathercast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.2/foundation.min.css">
+  <link rel="stylesheet" href="/assets/styles/weather-icons.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+  <body class="landing" ng-app="weathercast">
+
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">
+            <a ui-sref="home" class="logo"><img src="/assets/images/logo.png" alt="logo"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div ui-view></div>
+
+    <script src="/js/app.js"></script>
+
+  </body>
+
+</html>

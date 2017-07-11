@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="callout clearfix">
+
+    <div class="large-4 columns date">
+      <h5>{{ convertToDate({dt: weatherData.dt} ) | date : dateFormat }}</h5>
+    </div>
+
+    <div class="large-4 columns description">
+      <i class="wi wi-{{ weatherIcon( { description: weatherData.weather[0].main } ) }}"></i>
+	  <img src="{{iconUrl}}">
+      <p>{{ weatherData.weather[0].main }}</p>
+	  <p>{{ weatherData.weather[0].description | capitalize }}</p>
+    </div>
+
+    <div class="large-4 columns temps">
+      <p class="high">{{ convertToStandard( { daytimeTemp: weatherData.temp.max } ) }} &deg;</p>
+      <p class="low">{{ convertToStandard( { daytimeTemp: weatherData.temp.min } ) }} &deg;</p>
+    </div>
+
+  </div>
+</div>

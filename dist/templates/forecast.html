@@ -1,0 +1,30 @@
+<div id="forecast-wrap">
+
+  <div class="row" id="results">
+    <div class="large-4 large-centered columns">
+
+      <div class="results-header">
+        <h4 class="title">Weather Forecast for <span>{{ city }}</span></h4>
+
+        <a ui-sref="forecast-days({ days: 1 })" class="small secondary button" ng-class="{ 'hollow': days != 1 }">Today</a>
+        <a ui-sref="forecast-days({ days: 7 })" class="small secondary button" ng-class="{ 'hollow': days != 7 }">Week</a>
+        <a href="/" class="small button primary hollow back">Back to search</a>
+      </div>
+
+      <div id="weather-results" class="clearfix" ng-repeat="w in weatherResult.list">
+
+        <weather-results
+		  icon-url = "iconUrl"
+          weather-data="w"
+          convert-to-standard="daytimeTemp"
+          convert-to-date="convertDate(dt)"
+          date-format="EEEE"
+          weather-icon="findWeatherIcon(description)">
+        </weather-results>
+
+      </div><!-- #weather-results -->
+
+    </div>
+  </div>
+
+</div><!-- #forecast-wrap -->

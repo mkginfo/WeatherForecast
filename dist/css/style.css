@@ -1,0 +1,58 @@
+.top-bar .menu-text {
+  padding: 0; }
+
+.top-bar i {
+  font-size: 24px;
+  padding-left: 0.5em; }
+
+.top-bar .menu > li > a {
+  padding: 0.75em 0.25em 0.25em 0.25em; }
+
+#home-wrap .title {
+  margin: 2em 0 1em 0;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+#forecast-wrap .results-header {
+  margin-bottom: 2em; }
+  #forecast-wrap .results-header .title {
+    margin: 1em 0;
+    color: #444444;
+    font-weight: 300; }
+    #forecast-wrap .results-header .title span {
+      font-weight: normal; }
+
+#forecast-wrap #results {
+  margin-bottom: 4em; }
+  #forecast-wrap #results a.button.back {
+    float: right; }
+
+#forecast-wrap #weather-results .single-day {
+  border-top: 1px dashed #ccc;
+  padding: 1em 0; }
+
+#forecast-wrap #weather-results .date h5 {
+  font-size: 1.25rem;
+  font-weight: 300; }
+
+#forecast-wrap #weather-results .description {
+  text-align: center; }
+  #forecast-wrap #weather-results .description i {
+    font-size: 36px;
+    margin-bottom: 0.25em;
+    color: #444444; }
+  #forecast-wrap #weather-results .description p {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 0; }
+
+#forecast-wrap #weather-results .temps {
+  text-align: right; }
+  #forecast-wrap #weather-results .temps p {
+    display: inline-block; }
+    #forecast-wrap #weather-results .temps p.low {
+      color: #B7D3ED;
+      font-weight: bold; }
+    #forecast-wrap #weather-results .temps p.high {
+      color: #777777;
+      font-weight: bold; }

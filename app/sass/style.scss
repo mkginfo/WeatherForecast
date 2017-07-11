@@ -1,0 +1,81 @@
+.top-bar {
+  .menu-text {
+    padding: 0;
+  }
+  i {
+    font-size: 24px;
+    padding-left: 0.5em;
+  }
+  .menu>li>a {
+    padding: 0.75em 0.25em 0.25em 0.25em;
+  }
+}
+
+#home-wrap {
+  .title {
+    margin: 2em 0 1em 0;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
+#forecast-wrap {
+
+  .results-header {
+    margin-bottom: 2em;
+    .title {
+      margin: 1em 0;
+      color: #444444;
+      font-weight: 300;
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+
+  #results {
+    margin-bottom: 4em;
+    a.button.back {
+      float: right;
+    }
+  }
+
+  #weather-results {
+    .single-day {
+      border-top: 1px dashed #ccc;
+      padding: 1em 0;
+    }
+    .date h5 {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+    .description {
+      text-align: center;
+      i {
+        font-size: 36px;
+        margin-bottom: 0.25em;
+        color: #444444;
+      }
+      p {
+        font-size: 12px;
+        color: #ccc;
+        margin-bottom: 0;
+      }
+    }
+    .temps {
+      text-align: right;
+      p {
+        display: inline-block;
+        &.low {
+          color: #B7D3ED;
+          font-weight: bold;
+        }
+        &.high {
+          color: #777777;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+}
